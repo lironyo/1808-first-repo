@@ -1,9 +1,9 @@
-from flask import Flask
-app = Flask(__name__)
+def calculate(x, y):
+    return x + y
 
-@app.route('/')
-def home():
-    return "Hello from GitHub Actions + Docker!"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+def run():
+    a = 10
+    b = 5
+    result = calculate(a, b)
+    
+    print(result)
